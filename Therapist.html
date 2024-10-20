@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalmPath</title>
+    <link rel="stylesheet" href="./css/TherapistStyle.css">
+    <link rel="stylesheet" href="./css/headerFooterStyle.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./img/logo.PNG" alt="Logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./Therapist.html" class="active">Therapist Matching</a></li>
+                <li><a href="./Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="user-profile" onclick="toggleLogout()">
+            <img src="./img/user-profile.PNG" alt="">
+            <br>
+            <span>User</span>
+            <button class="logout-button" id="logoutBtn" onclick="logout(event)">Logout</button>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Therapist Matching Section -->
+        <section class="therapist-matching">
+            <h2>Find Professional Help</h2>
+            <a href="./mental-health-services.html" class="info-link">Information on Mental Health Services</a>
+            <div class="therapist-list">
+                <a href="./professional-help.html" class="therapist-card">
+                    <img src="./img/user-profile.png"  alt="Therapist 1">
+                    <p>Aryan Shrestha</p>
+                </a>
+                <a href="./professional-help.html" class="therapist-card">
+                    <img src="./img/user-profile.png"  alt="Therapist 2">
+                    <p>Dev Mani Maharjan</p>
+                </a>
+                <a href="./professional-help.html" class="therapist-card">
+                    <img src="./img/user-profile.png"  alt="Therapist 3">
+                    <p>Abhishek Dahal</p>
+                </a>
+                <a href="./professional-help.html" class="therapist-card">
+                    <img src="./img/user-profile.png"   alt="Therapist 4">
+                    <p>Enil Bhujel</p>
+                </a>
+
+                <a href="./professional-help.html" class="therapist-card">
+                    <img src="./img/user-profile.png" alt="Therapist 4">
+                    <p>Jitendra Prasad Chaudhary</p>
+                </a>
+            </div>
+            <a href="./professional-help.html" class="button">Professional Help</a>
+        </section>
+
+        <section class="schedule-session">
+            <h2>Schedule a Counseling Session</h2>
+            <div class="session-image">
+                <img src="./img/counseling .png" alt="Therapist Session">
+            </div>
+            <form action="#" method="POST" class="session-form">
+                <input type="date" name="session-date" class="date-picker">
+                <button type="submit" class="book-now-button">Book Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-section contact-info">
+            <h3>Contact Info</h3>
+            <p>01-4534088, 01-4536383</p>
+            <p>Dhobidhara Marg, Kathmandu 44600</p>
+        </div>
+        <div class="footer-section social-media">
+            <h3>Social Media Links</h3>
+            <a href="#" target="_blank">
+                <img src="./img/fb.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="#" target="_blank">
+                <img src="./img/insta.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="#" target="_blank">
+                <img src="./img/twitter.png" alt="Twitter" class="social-icon">
+            </a>
+            <a href="#" target="_blank">
+                <img src="./img/yt.png" alt="YouTube" class="social-icon">
+            </a>
+        </div>
+        <div class="footer-section privacy-policy">
+            <h3>Privacy Policy</h3>
+            <p>We value your privacy. CalmPath ensures that your personal data is kept secure and not shared with third parties without your consent.</p>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p>© Copyright 2024, CalmPath.com, Kathmandu, Nepal</p>
+    </div>
+    <script src="./js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./css/loginStyle.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;500&display=swap">
+</head>
+<body>
+    <div class="container">
+        <div class="flip-container">
+            <div class="flip-content">
+                <div class="right-side login-side">
+                    <!-- Login Form -->
+                    <div class="login-form">
+                        <h1>Log In</h1>
+                        <p>Enter Credentials to Proceed</p>
+                        <form>
+                            <div class="input-group">
+                                <label for="username">Username</label>
+                                <div class="input-wrapper">
+                                    <span class="input-icon username-icon"></span>
+                                    <input type="text" id="loginUsername" name="username" placeholder="Username" required>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <label for="password">Password</label>
+                                <div class="input-wrapper">
+                                    <span class="input-icon password-icon"></span>
+                                    <input type="password" id="loginPassword" name="password" placeholder="Password" required>
+                                </div>
+                            </div>
+                            <div class="actions">
+                                <div>
+                                    <input type="checkbox" id="remember" name="remember">
+                                    <label for="remember">Remember me</label>
+                                </div>
+                            </div>
+                            <button type="submit">Log In</button>
+                            <div class="or">
+                                <hr> <p>Or</p> <hr>
+                            </div>
+                            <p>Don't have an account? <a href="#" class="flip-toggle">Sign Up!</a></p>
+                        </form>
+                    </div>
+                </div>
+                <div class="right-side sign-up-side">
+                    <!-- Sign-Up Form -->
+                    <div class="sign-up-form">
+                        <h2>Sign Up</h2>
+                        <p>Enter Your Details to Create an Account</p>
+                        <form id="registerForm">
+                            <div class="input-group">
+                                <i class="input-icon username-icon"></i>
+                                <label for="username">Username</label>
+                                <input type="text" id="username" name="username" placeholder="Username" required>
+                                <small id="usernameError" class="error-message"></small>
+                            </div>
+                            <div class="input-group">
+                                <i class="input-icon email-icon"></i>
+                                <label for="email">E-mail Address</label>
+                                <input type="email" id="email" name="email" placeholder="E-mail" required>
+                                <small id="emailError" class="error-message"></small>
+                            </div>
+                            <div class="input-group">
+                                <i class="input-icon password-icon"></i>
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" placeholder="Password" required>
+                                <small id="passwordError" class="error-message"></small>
+                            </div>
+                            <div class="input-group">
+                                <i class="input-icon password-icon"></i>
+                                <label for="confirmPassword">Confirm Password</label>
+                                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+                                <small id="confirmPasswordError" class="error-message"></small>
+                            </div>
+                            <button type="submit">Sign Up</button>
+                            <div class="or">
+                                <hr> <p>Or</p> <hr>
+                            </div>
+                            <p>Already have an account? <a href="#" class="flip-toggle">Log In!</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/loginScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+
+.main-content {
+  padding: 20px;
+  background: #FFF3E0; 
+  min-height: 400px;
+}
+
+.mission {
+  background-color: #FFF3E0; 
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mission h2 {
+  color: #1976D2; 
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.overview {
+  margin: 20px;
+}
+
+.mission p, 
+.overview p {
+  text-align: justify;
+}
+
+.overview h2 {
+  color: #1976D2; 
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.overview-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-column, .right-column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.box {
+  background-color: #E0E0E0;
+  border: 1px solid #BDBDBD;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+  color: #1976D2;
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  line-height: 1.6;
+}
+
+.overview-content p {
+  margin-bottom: 10px;
+}
+
+.team {
+  margin-top: 50px;
+  text-align: justify;
+  margin: 20px;
+}
+
+.team h2 {
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); 
+  gap: 30px;
+}
+
+.team-member {
+  background-color: #E0E0E0;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member:hover {
+  transform: scale(1.1);
+}
+
+.team-member img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.team-member h3 {
+  margin: 10px 0 5px;
+}
+
+.team-member p {
+  color: #00796B;
+}
+
+.team-member a {
+  color: #1976D2;
+  text-decoration: none;
+}
+
+.team-member a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .mission, .overview, .team {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .overview-content {
+    flex-direction: row;
+  }
+
+  .left-column, .right-column {
+    width: 48%;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .mission, .overview, .team {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .overview-content {
+    justify-content: space-between;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .mission h2, .overview h2 {
+    font-size: 28px;
+  }
+}

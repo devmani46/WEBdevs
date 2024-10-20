@@ -1,0 +1,250 @@
+.main-content {
+  padding: 20px;
+  min-height: 400px;
+}
+
+.therapist-chat {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.therapist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.therapist-info {
+  display: flex;
+  align-items: center;
+}
+
+.therapist-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.status.online {
+  width: 15px;
+  height: 15px;
+  background-color: rgb(13, 202, 13);
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.therapist-actions a {
+  margin-left: 15px;
+}
+
+.therapist-actions img {
+  width: 30px; 
+  height: 30px; 
+  transition: transform 0.3s ease;
+}
+
+.therapist-actions img:hover {
+  transform: scale(1.2); 
+}
+
+.chat-box {
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  position: relative;
+  background-color: #E0E0E0;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  max-width: 100%;
+  position: relative;
+}
+
+.message.received {
+  align-self: flex-start;
+  background-color: #5c97d1;
+  padding: 2px;
+  border-radius: 8px;
+  position: relative;
+  margin-left: 32px;
+}
+
+.message.sent {
+  align-self: flex-end;
+  background-color: #64B5F6;
+  color: white;
+  padding: 2px;
+  border-radius: 8px;
+  position: relative;
+  margin-right: 32px;
+}
+
+.message-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.message.received .message-icon {
+  margin-right: 10px;
+}
+
+.message.sent .message-icon {
+  margin-left: 10px;
+  order: 2;
+}
+
+.message .text {
+  background-color: inherit;
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 90%;
+}
+
+.message.sent .text {
+  background-color: #64B5F6;
+  color: white;
+  border-radius: 8px;
+}
+
+.message.sent .message-icon {
+  position: absolute;
+  right: -40px; 
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.message.received .message-icon {
+  position: absolute;
+  left: -40px; 
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.message-input {
+  width: 100%;
+  padding: 10px;
+  padding-left: 40px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.camera-icon {
+  position: absolute;
+  left: 10px; 
+  top: 50%;
+  transform: translateY(-50%); 
+  z-index: 0; 
+}
+
+.camera-icon img {
+  width: 25px; 
+  height: 25px; 
+  cursor: pointer; 
+}
+
+.send-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%); 
+  z-index: 1; 
+}
+
+.send-icon img {
+  width: 20px; 
+  height: 20px; 
+  cursor: pointer; 
+}
+
+.more-therapists {
+  text-align: right;
+}
+
+.more-therapists a {
+  color: #1976D2;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .therapist-chat {
+      padding: 15px;
+  }
+
+  .message {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .message.sent {
+      align-self: flex-start;
+      margin-right: 0;
+      margin-left: 0;
+  }
+
+  .message.received {
+      align-self: flex-start;
+      margin-left: 0;
+  }
+
+  .message-input {
+      width: 100%;
+      margin-left: 0;
+  }
+
+  .camera-icon {
+      left: 10px;
+  }
+
+  .send-icon {
+      right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+      padding: 10px;
+  }
+
+  .therapist-chat {
+      margin-bottom: 15px;
+  }
+
+  .therapist-info img {
+      width: 35px;
+      height: 35px;
+  }
+
+  .therapist-actions img {
+      width: 25px; 
+      height: 25px; 
+  }
+
+  .message-icon {
+      width: 25px;
+      height: 25px;
+  }
+
+  .message.sent .text,
+  .message.received .text {
+      padding: 8px;
+  }
+
+  .message-input {
+      padding: 8px;
+  }
+}

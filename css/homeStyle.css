@@ -1,0 +1,97 @@
+
+.main-content {
+  padding: 20px;
+  min-height: 400px;
+  background-color: #F5F5F5; 
+}
+
+.section-heading h2 {
+  font-size: 22px;
+  color: #1976D2;
+  margin-bottom: 20px;
+}
+
+.mental-health-awareness, .introduction {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #FFF3E0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-content img {
+  width: 100%;
+  height: auto; 
+  border-radius: 10px;
+}
+
+.introduction .section-content p {
+  font-size: 16px;
+  color: #333;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.feature {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.feature h3 {
+  font-size: 18px;
+  color: #00796B; 
+  margin-bottom: 20px;
+}
+
+.feature-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-image img:hover {
+  transform: scale(1.1); 
+}
+
+@media (min-width: 768px) {
+  .main-content {
+    padding: 40px;
+  }
+
+  .section-heading h2 {
+    font-size: 26px;
+  }
+
+  .feature {
+    width: 45%; 
+  }
+
+  .feature h3 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-content {
+    padding: 50px;
+  }
+
+  .features {
+    flex-wrap: nowrap; 
+  }
+
+  .feature {
+    width: 30%; 
+  }
+
+  .feature h3 {
+    font-size: 22px;
+  }
+}
