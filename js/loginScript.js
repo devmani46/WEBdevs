@@ -1,16 +1,5 @@
 const usernameTaken = ["user123", "admin", "testuser"]; 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const flipContainer = document.querySelector('.flip-container');
-    const flipToggles = document.querySelectorAll('.flip-toggle');
-
-    flipToggles.forEach(toggle => {
-        toggle.addEventListener('click', function() {
-            flipContainer.classList.toggle('flip');
-        });
-    });
-});
-
 document.querySelector('.login-form form').addEventListener('submit', function(e) {
     e.preventDefault();
 
@@ -44,7 +33,6 @@ document.getElementById('registerForm').addEventListener('submit', function (e) 
         isValid = false;
     }
 
-    // Email validation
     if (email === '') {
         showError('email', 'Email is required');
         isValid = false;
@@ -53,7 +41,6 @@ document.getElementById('registerForm').addEventListener('submit', function (e) 
         isValid = false;
     }
 
-    // Password validation
     if (password === '') {
         showError('password', 'Password is required');
         isValid = false;
@@ -65,7 +52,6 @@ document.getElementById('registerForm').addEventListener('submit', function (e) 
         isValid = false;
     }
 
-    // Confirm password validation
     if (confirmPassword === '') {
         showError('confirmPassword', 'Confirm password is required');
         isValid = false;
